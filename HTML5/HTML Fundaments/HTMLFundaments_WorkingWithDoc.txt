@@ -1,0 +1,46 @@
+HTML = Hyper text markup language 
+
+take the text wrap it to the markup language, this is additional information to the client (browser)
+to render the data it the document. 
+
+browser interpreted it and display it in the browser. 
+
+Http - Hypertext transfer protocol - is a method which we exchange the HTML 
+URI - Universal Resource Identifier and URL Universal resource locator 
+
+HTML Document: 
+1. The DOCTYPE indicates the standards  compliance or version to the document <!DOCTYPE HTML>
+2. After the document type you will see HTML document or tag 
+<html>
+... page content here 
+</html>
+3. Insice the HTML elelement you may fint two core elements 
+<head> 
+... all the content that would be renderd to the user, metaData, title, reference to css doc 
+</head>
+<body>
+.. Actual content will be dispal to the user 
+</body> 
+
+Inside <head> element there are 6 key elements 
+1. <title>
+2. <meta> 
+3. <script> 
+4. <style>
+5. <link>
+6. <base> - base adress 
+
+in <body>: 
+1. <text>
+2. <lists>
+3. <links>
+4. <tables>
+5. <images>
+
+<p></p> paragraphs are always rendered in different line even in HTML is in the same line 
+Id and names should be unique for a particular element 
+
+
+
+
+

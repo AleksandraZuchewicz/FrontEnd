@@ -1,0 +1,38 @@
+1. Heading - denote sections of the document 
+h1 is the primary heading for the document: should only appear once per page
+h2-h6 - different levels of headings 
+
+2. Block vs. Inline Elements 
+Block element (eg. div):
+- containers to group other elements 
+- may contain block or inline elements 
+Inline elements (eg. span):
+- container for text;
+- May contain other inline elements 
+
+you can nest paragraph elements <p> but you should not 
+
+Text Braking and Whitespace: 
+<pre></pre> - preformating 
+<br /> break element 
+<hr /> - horyzontall line
+&nbsp;
+&lt;
+&gt;
+
+Reference Text: 
+<sub></sub>
+<sup></sup>
+<cite></cite>
+<abbr></abbr>
+<code></code>
+<samp></samp>
+<kbd></kbd>
+<var></var>
+<blockquote></blockquote>
+<q></q>
+
+
+Sematic Maning - relating to meaning in language or logic 
+eg instead of div we can use <article></article> - name showing content more realistic
+
