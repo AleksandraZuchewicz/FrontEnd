@@ -1,0 +1,7 @@
+Types of list: 
+1. Unordered list - series of items, essential content (tags or links, buttons) that are group together but don't have 
+a particular order 
+2. Ordered List - we do care about the order of the list 
+3. definition List: a list of pairs of items of the definition term and the actual definition of that term 
+
+Modern List Users: ale very often horizontal, doesn't look like classic list, really often with usage of different frameworks eg. bootstrap. 
