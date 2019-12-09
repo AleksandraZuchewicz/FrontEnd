@@ -14,7 +14,7 @@ document.querySelectorAll("#example-container li");
 
 //How to iterate through node list:
 //1. standard for loop
-//2. foreatch method
+//2. for each method
 
 let item = document.querySelectorAll("#example-container li");
 
