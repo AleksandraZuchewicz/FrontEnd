@@ -1,0 +1,12 @@
+Images: 
+<img
+    src="wired-brain-coffee-logo.png"
+    alt="codde.com"
+    height="150 px"
+    width="150 px"
+/>
+<picture
+    <source type="image/jpeg" srcset="" sizes="" />
+    <source type="image/png" srcset="" sizes="" />
+    <img src="" alt="" />
+/>

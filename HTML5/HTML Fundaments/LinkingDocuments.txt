@@ -1,0 +1,29 @@
+Linking Documents: 
+a link is just another HTML element: 
+1. Source anchor
+<a href="Pluralsight.html> 
+    Pluralsight
+</a>
+2. Named anchor: doesnot render a link 
+<a name="TOC"> 
+  
+</a>
+2. Implicit anchor
+<div id="article"> 
+  
+</div>
+
+Linking documents you may do with absolute or relative links:
+absolute: "https://app.pluralsight.com/course-player?clipId=87cb8edc-6f82-4911-820f-2c8a661c62f5"
+
+relative: href="./content/careers.html"
+
+Expanding Link Metadata: 
+1. Language 
+2. Relationship
+3. Content-Type
+4. Access Key 
+5. Target 
+
+
+

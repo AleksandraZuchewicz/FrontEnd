@@ -1,0 +1,12 @@
+Defining Tables: 
+1. Caption - information which is telling the users what this table shows them
+2. Header - Top row on the table 
+3. Body of the table 
+4. Footer - can define elements like aggregate values, sum, averages  
+
+<TR> Table Row 
+<TH> Table Header 
+<TD> Table Data,cell
+colspan/rowspan
+
+
