@@ -1,0 +1,71 @@
+CSS is a language when you can control the formatting, presentation of the web page. things like 
+colours, layouts and fonts, 
+
+style rules: 
+body, h1 { (selector)
+	background-color:#cccc99;(propertName: value)
+	padding:10px;
+}
+
+doby selectors defines body elements 
+id selesctor: 
+#menu{
+	background-color:#ffffc0;
+}
+class selsctror
+ .bookTitle{}
+
+descendant selector: 
+div p {
+background-color:#12dr56;
+}
+child selector: 
+div > p {}
+
+attribute selectror: 
+img[alt=spacer]{}
+pseudo class: 
+a:visited {}
+
+css comments /*  */
+
+Specifing CSS Propery Values 
+Kaywords: thin, thick, larger 
+physycal measurments: 
+inches(in), points(pt), picas(pc)
+screen measurments(pixels(px))
+relative measurments: 
+%,em
+colorcodes: 
+#rrggbb, rgb(r,g,b)
+fonts: Halvetica, sens-serif
+functional notation: 
+rgb(r,g,b) url("")
+
+*{} star selector would assign changes for everything
+
+Css = cascading style cheets 
+
+inde defaauld.html can be : 
+Default stylesheet  - least weight 
+user stylesheet - more weight 
+author atylesheets <link> @import = most weights
+
+when the browser see conflicted roles in CSS files, it will take the lats specific rules t
+to display on the website. (last roles in the document, roll on line 20 would win, rather than roll in the line 10.
+
+Specificity: was of quantifying the importance of tules
+A: count of type selectors
+B: Count of class and attribute selectors 
+C: count of ID selectors 
+
+roles with higher number will win this is the most important 
+
+body > div {} specificity :2
+div{} specificity :1
+*{} specificity :0
+
+inheritance: some property values flow down the document tree
+
+
+

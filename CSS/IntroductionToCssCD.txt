@@ -1,0 +1,16 @@
+Layout with CSS: 
+1. Header
+2. Navigation, 
+3. content, 
+4. Links 
+5.Footer
+
+
+Position property: 
+Position can be Static: it's going to the bottom of the page 
+Relative position: moves the element from some position to some direction.
+eg(Top and Left)
+absolute: moving the element relative to the body of the website 
+Fix: its relative to the window itself 
+
+
