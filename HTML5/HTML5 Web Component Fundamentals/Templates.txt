@@ -1,0 +1,34 @@
+Templates 
+Todays common Approaches to Tamplates: 
+1. HTML in Scrip Tags 
+<script type="text/custom-name-here">
+    +Northinf inside ad to render 
+    - not dom Elements 
+
+2. Hidden Dom Elements: 
+<div style="display: none;" id="my-tempate"></div>
+    + easy to clone - Just DOM elements
+    - Everything inside still runInThisContext may throw 404's
+
+Template Characteristics: 
+1. Inert: Does nothing until cloned 
+2. Hidden From Selectors (inside template you not allow to search by selectors)
+<template>
+    <p id="p"></p>
+</template> 
+document.getElementById("p"); // null
+
+Flexible Placement - you can place than when you wnt within your project
+<head> 
+    <body>
+  <frameset>
+    </frameset>
+    </body>
+
+
+Template Activation: 
+1. let tempate = document.querySelector("#myTempate")
+2. let clone = document.importNode(template.content, true)
+3. document.body.appendChild(clone)
+
+

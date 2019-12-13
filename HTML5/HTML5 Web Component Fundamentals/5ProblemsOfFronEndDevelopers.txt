@@ -1,0 +1,22 @@
+// Problem 1. Undescryptive Markup
+// Problem 2. Stylying conflicts
+// Problem 3. No native Templates
+// we slap HTML in <script type="text/html">
+// we store HTML in hidden Dom elements and manually extract
+// we use iframe's to get separate scope and stylng
+// Problem 4. no Bundling
+// Problem 5. no Standard
+
+//Solution:
+//HTML Web components:
+// - Templates
+// - Custom Elements
+// - Shadow DOMError
+// - HTML5 Imports
+
+//Why WebComponents:
+// - Descryptive markup
+// - Dont start at square zero
+// - Esealy replaced and upgraded
+// - Fewer integration mistakes
+// - Clearer interface/ API
