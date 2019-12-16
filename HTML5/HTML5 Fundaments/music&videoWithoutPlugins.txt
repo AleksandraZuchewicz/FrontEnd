@@ -1,8 +1,8 @@
-//What is HTML5 Media?
-// consisat at least 3 parts:
-// 1. A native media element - audio or video tag user in HTML markup to host a media
-// 2. Different media types
-// 3. Speech API
+What is HTML5 Media?
+consisat at least 3 parts:
+  1. A native media element - audio or video tag user in HTML markup to host a media
+  2. Different media types
+  3. Speech API
 
 {
   /* <video controls loop preload poster="img/kitchen.png" width="900">
@@ -20,5 +20,5 @@
 </audio> */
 }
 
-//Dynamic content: as the video ends, it automatically starts the next clip
-// it can be used for build-in ads or playlist
+Dynamic content: as the video ends, it automatically starts the next clip
+ it can be used for build-in ads or playlist

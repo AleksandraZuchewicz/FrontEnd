@@ -1,8 +1,8 @@
-//Using CSS3 Selectros
+Using CSS3 Selectros
 
-// find elelement by class
+find elelement by class
 document.getElementsByClassName("img-responsive");
-//find elements by selectror
+find elements by selectror
 document.querySelector(".img-responsive");
 
 document.querySelectorAll(".img-responsive");
@@ -10,11 +10,12 @@ document.querySelectorAll(".img-responsive");
 document.querySelectorAll("#example-container li:first-child");
 
 document.querySelectorAll("#example-container li");
-//as a result its a node list, to an array
 
-//How to iterate through node list:
-//1. standard for loop
-//2. for each method
+as a result its a node list, to an array
+
+How to iterate through node list:
+1. standard for loop
+2. for each method
 
 let item = document.querySelectorAll("#example-container li");
 

@@ -10,4 +10,4 @@
 Receiving response depends on multiple factors - 
 1. Location of the Server 
 2. How many trips
-3. Size of files (smaller file will be faster)
+3. Size of files (smaller file will be faster)git status 
