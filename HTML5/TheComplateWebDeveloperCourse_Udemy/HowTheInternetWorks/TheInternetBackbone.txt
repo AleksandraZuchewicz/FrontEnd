@@ -1,0 +1,13 @@
+1. Home 
+-At home we are using Wi-fi Iwirelss internet), the signal is going through router
+- router is connected to modem 
+2. Signals tower 
+- signals tower are connected to the modem 
+- signal is going through signals towers to our ASP(internet service provider)
+3. ASP 
+- the internet provider s connected to the Internet Backbone through the cable 
+
+Receiving response depends on multiple factors - 
+1. Location of the Server 
+2. How many trips
+3. Size of files (smaller file will be faster)

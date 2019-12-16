@@ -1,0 +1,13 @@
+How does the Internet work? 
+
+1. opening the Browser. 
+2. Typing URL
+3. Browser is sending question to our ISP(Internet service provider)
+4. ISP is sending request the DNS (domain Dame service)
+5. From DNS is sending back information with searched URL Address (eg. 127.217.7.23) - IP
+6. ISP is sending back information to chrome(our browser)
+7. Browser is sending  request to google servers 
+8. Google will send information ack with HTML CSS JavaScript documents
+
+
+We can search just for the IP address. request will directly go to server
