@@ -1,0 +1,44 @@
+/*Rules :
+ 
+Selector {
+    Property: value
+}*/
+
+
+/* because it's cascading - it's always taking last element even if some style is added multiple times to the same element */
+
+body {
+    background-image: url(1.jpg);
+    background-size: cover
+}
+
+h2,
+p {
+    color: red;
+    text-align: center;
+    border: 5px dashed peru;
+    cursor: pointer;
+}
+
+p {
+    color: green
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext {
+    border: 5px dashed darksalmon;
+}
+
+#div1 {
+    background: rgba(0, 0, 255, 0.3)
+}
+
+
+/* are tree methods to link CSS to document: 
+1. create style.css and link to the .htm file in head element
+2. inline styling - directly in the HTML tag
+3. by creating style tags in head element*/
