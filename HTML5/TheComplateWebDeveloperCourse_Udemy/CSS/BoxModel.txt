@@ -1,0 +1,18 @@
+Elements of box model: 
+1. Content 
+2. Padding 
+3. Border 
+4. Margin 
+
+.boxmodel{
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px; 
+    margin: 0px 20px
+}
+
+different between px and em 
+px - pixels (size in pixels)
+em - size miltiple times bigger than pixel value.
+eg font size = 20px 
+eg fint size = 2em = two times bigger than pixel value to related elements
