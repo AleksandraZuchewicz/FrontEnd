@@ -21,6 +21,25 @@ p {
 }
 
 p {
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: 'Times New Roman'
+}
+
+img {
+    float: left
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+p {
     color: green
 }
 
