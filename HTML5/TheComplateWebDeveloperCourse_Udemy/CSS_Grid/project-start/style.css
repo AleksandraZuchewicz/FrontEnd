@@ -48,6 +48,13 @@ a {
     text-decoration: none;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 
