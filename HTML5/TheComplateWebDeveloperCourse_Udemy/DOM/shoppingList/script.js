@@ -1,6 +1,8 @@
 let button = document.getElementById("enter");
 let input = document.getElementById("userinput");
-let ul = document.querySelector("ul")
+var ul = document.querySelector("ul")
+let deleteAll = document.getElementById("deletaAll")
+let allListElements = document.querySelectorAll("ul > li")
 
 function inputLength() {
     return input.value.length
@@ -21,5 +23,11 @@ button.addEventListener("click", function() {
 input.addEventListener("keypress", function(event) {
     if (inputLength() > 0 && event.keyCode == 13) {
         createListElement()
+    }
+})
+
+deleteAll.addEventListener("click", function() {
+    while (ul.hasChildNodes()) {
+        ul.removeChild(ul.firstChild);
     }
 })
