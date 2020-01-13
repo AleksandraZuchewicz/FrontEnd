@@ -1,0 +1,22 @@
+Data when we POST something: 
+when exchanging data between the server and browser the data can only by a text, so we cant just send JS object. 
+Text can be understood by both ends. 
+
+JSON - JavaScript Object Notation 
+its a syntax for storing and exchanging data, 
+JSON is a text, written with JS object Notation. 
+Can be read by any language 
+
+Two common method used with Json
+JSON.Parse()
+let obj = JSON.Parse("{"name":"John","Age":"30"}")
+- its taking a JSON file and pasing it to the JS object 
+
+The opposite way: 
+JSON.stringify();
+
+let myJSON = JSON.stringify(obj);
+- it will chenge js obj into a JSON 
+
+
+
