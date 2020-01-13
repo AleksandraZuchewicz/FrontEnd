@@ -1,0 +1,17 @@
+in 1998 Tim Bernes-Lee invented the WorldWideWeb (WWW)
+To sending information or any text you have to have a protocol. 
+That's why he invented the HTTP - Hypertext transfer Protocole. 
+
+With the Use of HTML and HTTP, we have the world wide web 
+
+HTTP Methods: (communication with the server)
+- Get - get a HTML file 
+- Post - post something (eg. some data added to server )
+- Put - update data I've send 
+- Delete - delete a piece of data on the backend 
+
+Server Response: 
+- (HTTP Status Messages) 1xx, 2xx,3xx,4xx,5xx
+- data (eg. new HTML file)
+
+HTTPS - HyperText Transfer Protocol Secure - make password hashing 
