@@ -1,0 +1,35 @@
+When the browser was receiving any new information, they were not visible without refreshing the browser. 
+To solve refreshing problem - Ajax technology was created which - it allows you to read from the webserver after the page was loaded 
+and update the webpage without reloading the page 
+
+invented in 2006 by Google 
+
+Creating the Ajax call:(the old way): XHR 
+let request = new XMLHttpRequest()
+request.open("GET", "/my/url", true);
+
+request.onload = function(){
+    if(request.status >= 200 && request.status < 400){
+        let data = JSON.parse(request.responseText);
+    }else{
+        //We reached our target server, but it returned an error
+    }
+}
+
+request.onerror = function(){
+    //There was a connection error of some sort
+}
+ request.send();
+
+
+New way presented by jQuery:
+$.getJSON("/my/url", function(data){
+
+})
+
+The new way in native js: Fetch
+ fetch("/my/url").then(response => {
+     console.log(response)
+ })
+
+
