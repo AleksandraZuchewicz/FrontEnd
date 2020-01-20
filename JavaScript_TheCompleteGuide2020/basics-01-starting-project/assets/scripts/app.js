@@ -14,28 +14,28 @@ function createAndWriteLog(operator, resultBeforeCalc, calcNumber) {
 function add() {
     const enteredNumber = getUserNumberInput()
     const initialResult = currentResult;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
     createAndWriteLog("+", initialResult, enteredNumber)
 }
 
 function subtract() {
     const enteredNumber = getUserNumberInput()
     const initialResult = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     createAndWriteLog("-", initialResult, enteredNumber)
 }
 
 function multiply() {
     const enteredNumber = getUserNumberInput()
     const initialResult = currentResult;
-    currentResult = currentResult * enteredNumber;
+    currentResult *= enteredNumber;
     createAndWriteLog("*", initialResult, enteredNumber)
 }
 
 function devide() {
     const enteredNumber = getUserNumberInput()
     const initialResult = currentResult;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     createAndWriteLog("/", initialResult, enteredNumber)
 }
 
