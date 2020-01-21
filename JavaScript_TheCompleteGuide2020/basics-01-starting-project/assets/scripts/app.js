@@ -23,37 +23,42 @@ function writeToLog(operationId, prevResult, operationalNumber, newResult) {
     console.log(logEntries)
 }
 
-
-function add() {
+function calculateResult(calculationType) {
     const enteredNumber = getUserNumberInput()
     const initialResult = currentResult;
-    currentResult += enteredNumber;
-    createAndWriteLog("+", initialResult, enteredNumber);
-    writeToLog("ADD", initialResult, enteredNumber, currentResult)
+    let mathOperator;
+    if (calculationType == "ADD") {
+        currentResult += enteredNumber;
+        mathOperator = "+"
+    } else if (calculationType == "SUBTRACT") {
+        currentResult -= enteredNumber;
+        mathOperator = "-"
+    } else if (calculationType == "MULTYPLY") {
+        currentResult *= enteredNumber;
+        mathOperator = "*"
+    } else {
+        currentResult /= enteredNumber;
+        mathOperator = "/"
+    }
+    createAndWriteLog(mathOperator, initialResult, enteredNumber);
+    writeToLog(calculationType, initialResult, enteredNumber, currentResult)
+}
+
+
+function add() {
+    calculateResult("ADD")
 }
 
 function subtract() {
-    const enteredNumber = getUserNumberInput()
-    const initialResult = currentResult;
-    currentResult -= enteredNumber;
-    createAndWriteLog("-", initialResult, enteredNumber);
-    writeToLog("SUBTRACT", initialResult, enteredNumber, currentResult)
+    calculateResult("SUBTRACT")
 }
 
 function multiply() {
-    const enteredNumber = getUserNumberInput()
-    const initialResult = currentResult;
-    currentResult *= enteredNumber;
-    createAndWriteLog("*", initialResult, enteredNumber);
-    writeToLog("MULTYPLY", initialResult, enteredNumber, currentResult)
+    calculateResult("MULTYPLY")
 }
 
 function divide() {
-    const enteredNumber = getUserNumberInput()
-    const initialResult = currentResult;
-    currentResult /= enteredNumber;
-    createAndWriteLog("/", initialResult, enteredNumber);
-    writeToLog("DIVIDE", initialResult, enteredNumber, currentResult)
+    calculateResult("DIVIDE")
 }
 
 
