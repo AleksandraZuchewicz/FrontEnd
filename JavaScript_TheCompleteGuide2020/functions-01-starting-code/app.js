@@ -34,17 +34,28 @@ if (randomValue < 0.34) {
     return SCISSORS
 }
 
-const getWiner = function(compCoise, UserCoise) {
-    if (compCoise == UserCoise) {
-        return RESULT_DRAW
-    } else if (compCoise === ROCK && UserCoise === PAPER ||
+const getWiner = (compCoise, UserCoise) => {
+    return compCoise == UserCoise ?
+        RESULT_DRAW :
+        compCoise === ROCK && UserCoise === PAPER ||
         compCoise === PAPER && UserCoise === SCISSORS ||
-        compCoise === SCISSORS && UserCoise === ROCK) {
-        return RESULT_PLAYER_WON
-    } else {
-        return RESULT_COMPUTER_WON
-    }
+        compCoise === SCISSORS && UserCoise === ROCK ?
+        RESULT_PLAYER_WON :
+        RESULT_COMPUTER_WON
+
 }
+
+// const getWiner = function(compCoise, UserCoise) {
+//     if (compCoise == UserCoise) {
+//         return RESULT_DRAW
+//     } else if (compCoise === ROCK && UserCoise === PAPER ||
+//         compCoise === PAPER && UserCoise === SCISSORS ||
+//         compCoise === SCISSORS && UserCoise === ROCK) {
+//         return RESULT_PLAYER_WON
+//     } else {
+//         return RESULT_COMPUTER_WON
+//     }
+// }
 
 startGameBtn.addEventListener("click", function() {
     if (gameIsRunning) {
