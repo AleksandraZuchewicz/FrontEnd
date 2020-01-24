@@ -11,7 +11,7 @@ const RESULT_COMPUTER_WON = "COMPUTER WON";
 let gameIsRunning = false;
 
 const getPlayerCoise = function() {
-    const selection = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, " ").toUpperCase();
+    const selection = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, "").toUpperCase();
     if (
         selection !== ROCK &&
         selection !== PAPER &&
@@ -25,13 +25,14 @@ const getPlayerCoise = function() {
 
 const getComputerChice = function() {
     const randomValue = Math.random()
-}
-if (randomValue < 0.34) {
-    return ROCK
-} else if (randomValue < 0.67) {
-    return PAPER;
-} else {
-    return SCISSORS
+
+    if (randomValue < 0.34) {
+        return ROCK
+    } else if (randomValue < 0.67) {
+        return PAPER;
+    } else {
+        return SCISSORS
+    }
 }
 
 const getWiner = (compCoise, UserCoise) => {
@@ -45,17 +46,6 @@ const getWiner = (compCoise, UserCoise) => {
 
 }
 
-// const getWiner = function(compCoise, UserCoise) {
-//     if (compCoise == UserCoise) {
-//         return RESULT_DRAW
-//     } else if (compCoise === ROCK && UserCoise === PAPER ||
-//         compCoise === PAPER && UserCoise === SCISSORS ||
-//         compCoise === SCISSORS && UserCoise === ROCK) {
-//         return RESULT_PLAYER_WON
-//     } else {
-//         return RESULT_COMPUTER_WON
-//     }
-// }
 
 startGameBtn.addEventListener("click", function() {
     if (gameIsRunning) {
@@ -63,8 +53,21 @@ startGameBtn.addEventListener("click", function() {
     }
     gameIsRunning = true;
     console.log({ message: "Game is starting" });
-    const playerSelection = getPlayerCoise();
-    console.log(playerSelection)
-    const winner = getWiner(compCoise, UserCoise)
+    const userChoise = getPlayerCoise();
+    console.log(userChoise)
+    const computerChoise = getComputerChice()
+    let winner = getWiner(computerChoise, userChoise)
     console.log(winner)
+
+    let message;
+    if (winner === RESULT_DRAW) {
+        message = `You picked ${userChoise}, computer choice ${computerChoise}, therefore you have a drow`
+    } else if (winner === RESULT_PLAYER_WON) {
+        message = `You picked ${userChoise}, computer choice ${computerChoise}, therefore you have won`
+    } else {
+        message = `You picked ${userChoise}, computer choice ${computerChoise}, therefore you lost`
+    }
+    alert(message);
+    gameIsRunning = false;
+
 })
