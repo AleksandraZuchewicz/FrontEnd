@@ -169,8 +169,22 @@ class App {
         finishedProjectsList.setSwitchHandlerFunction(
             activeProjectsList.addProject.bind(activeProjectsList)
         );
-        let analiticBtn = document.getElementById('analiticButton');
-        analiticBtn.addEventListener("click", this.startAnalitics)
+        //call additional scrip by cliking button
+        // let analiticBtn = document.getElementById('analiticButton');
+        // analiticBtn.addEventListener("click", this.startAnalitics)
+
+        //set timeout 
+        window.setTimeout(this.startAnalitics, 3000);
+
+        //set interval
+        let inteval = setInterval(() => {
+            console.log('Sending massage')
+        }, 2000)
+
+        //stop interval 
+        let stopBtn = document.getElementById("stopAnalitics").addEventListener('click', () => {
+            clearInterval(inteval)
+        })
     }
     static startAnalitics() {
         const analitics = document.createElement('script');
