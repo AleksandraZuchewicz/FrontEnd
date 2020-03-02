@@ -1,0 +1,8 @@
+When we are thinking about what data structure use, we are thinking: 
+1. How long does an operation take"
+
+Expressed in a generalized form (NOT in time units but mathematical terms);
+
+
+O(n) 
+...n = number of affected elements 
