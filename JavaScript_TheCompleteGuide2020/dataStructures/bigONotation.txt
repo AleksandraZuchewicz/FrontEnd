@@ -6,3 +6,28 @@ Expressed in a generalized form (NOT in time units but mathematical terms);
 
 O(n) 
 ...n = number of affected elements 
+
+1. Constant time complexity: 
+O(1) 
+eg. push()
+one operation on one time 
+
+2. Linear Time Complexity: 
+O(n)
+eg. sumUp()
+the more items we using the more time its cost, but it's growing linear 
+1000 items will take 1000 time 
+
+3. Quadratic Time Complexity:
+O(n^2)
+eg. sort() 
+for loop in a for loop
+the more items we have the more time it cost, bit its growing  exponentially
+we want to avoid it 
+
+4. Logarithmic Time complexity:
+O(log n)
+eg: binary search
+
+time it's growing slower than linear 
+
