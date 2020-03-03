@@ -1,0 +1,40 @@
+What is Performance? 
+
+Can be split for two things : 
+1. Startup time -
+How long does it take to see something on the screen? 
+How quickly is a user able to interact with the page?
+2. Runtime performance - 
+How smooth does the application run(are there freezes or lag)? 
+How smooth do animations play? Are there any memory leaks in the page getting slower over time? 
+
+
+What influences Performace? 
+1. JS Execution: 
+- How fast does the script load? (startup Time)
+- How much work does the script do? 
+- How much memory is occupied?
+
+
+Different "Layers" of Performance Optimization 
+1. Start-up time - Script Size: Delays initial parsing/Execution
+Number of HTTP Roundtrips 
+2. Runtime - Optimize code Execution, Dom Access: Avoid unnecessary code execution 
+Avoid Memory Leaks: can crush you app 
+find code Alternative with better Performance: Especially important for high-frequency code parts 
+- Micro-optimization in your code: Optimize for a very specific use-case 
+
+Measuring & Auditing 
+Check Roundtrips + script size and set script/bundle size budgets 
+Measure performance with dev tools 
+explore best practice, patterns and benchmarks
+
+- performance.now()
+- browser devtools
+- jsperf.com
+- webpagetest.com
+
+
+
+
+
